@@ -80,11 +80,9 @@ WSGI_APPLICATION = 'ems_root.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "ems_db",
         "USER": "ems_admin",
         "PASSWORD": "ems_db_123",
-        "HOST": "127.0.0.1",
-        "PORT": "5432",
+        
     }
 }
 
