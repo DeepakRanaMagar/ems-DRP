@@ -8,6 +8,14 @@ class Department(models.Model):
     def __str__(self):
         return self.name
 
+class Role(models.Model):
+    name = models.CharField(max_length=150)
+    department = models.ForeignKey(Department, on_delete = models.CASCADE)
+
+    def __str__(self):
+        return self.name
+
+
 class Employee(models.Model):
     name = models.CharField(max_length = 150)
     email = models.EmailField()
@@ -15,6 +23,7 @@ class Employee(models.Model):
     joined_date = models.DateField()
     address = models.TextField()
     department  = models.ForeignKey(Department, on_delete = models.CASCADE)
+    role = models.ForeignKey(Role, on_delete = models.CASCADE)
     
     def __str__(self):
         return self.name
