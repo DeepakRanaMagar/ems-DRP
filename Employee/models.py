@@ -11,6 +11,7 @@ class Department(models.Model):
 class Role(models.Model):
     name = models.CharField(max_length=150)
     department = models.OneToOneField(Department, on_delete = models.CASCADE, null=True, blank=True, default="Employee")
+    
     def __str__(self):
         return self.name
 
