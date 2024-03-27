@@ -38,10 +38,19 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework', #DRF
+    'drf_spectacular', #API docs Swagger
 
     # apps
     'Employee.apps.EmployeeConfig',
 ]
+REST_FRAMEWORK ={
+    "DEFAULT_SCHEMA_CLASS":"drf_spectacular.openapi.AutoSchema",
+}
+
+SPECTACULAR_SETTINGS = {
+    "TITLE":"Employee Management System",
+    "DESCRIPTION": "This is Django Project for Employee Management project."
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
