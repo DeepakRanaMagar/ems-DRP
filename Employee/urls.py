@@ -4,7 +4,6 @@ from django.urls import path
 from .apiviews import EmployeeList, EmployeeDetail, EmployeeCreate, DepartmentList, DepartmentDetail, DepartmentCreate, RoleList, RoleDetail, RoleCreate
 from .views import index
 
-
 urlpatterns = [
     path('', index),
     # Employee paths
