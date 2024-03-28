@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework', #DRF
     'drf_spectacular', #API docs Swagger
-
+    'django_admin_generator', 
     # apps
     'Employee.apps.EmployeeConfig',
 ]
