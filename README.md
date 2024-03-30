@@ -35,9 +35,9 @@ Visit `http://localhost:8000` in your browser to view the application.
 
 ## Features
 
-- Feature 1
-- Feature 2
-- Feature 3
+- Create & Manage Employees
+- Create & Manage Roles
+- Create & Manage Department
 
 ## Contributing
 
