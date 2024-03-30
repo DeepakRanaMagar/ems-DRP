@@ -21,7 +21,8 @@ class RoleSerializer(serializers.ModelSerializer):
         ]
 
 class EmployeeSerializer(serializers.ModelSerializer):
-
+    role = serializers.StringRelatedField()
+    department = serializers.StringRelatedField()
     class Meta:
         model = Employee
         fields = [
